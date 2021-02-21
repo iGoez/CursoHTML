@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas extra</title>
+    <style>
+        img{
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    Sirve para contener y enmarcar imagenes
+
+    <figure>
+        <img src="spiderman1.png" alt="spiderman1">
+        <figcaption>Imagen de spiderman</figcaption>
+    </figure>
+     -->
+
+    <picture>
+        <source srcset="spiderman3.png" media="(min-width:900px)">
+        <source srcset="spiderman2.png" media="(min-width:500px)">
+        <source srcset="spiderman1.png" media="(min-width:300px)">
+
+        <img src="spiderman4.png" alt="Spiderman fallback">
+    </picture>
+
+
+    <details >
+        <summary>Poderes de spiderman</summary>
+        <ul>
+            <li>Superfuerza</li>
+            <li>Agilidad</li>
+            <li>Telaraña</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </details>
+
+
+</body>
+</html>
