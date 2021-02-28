@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas Extras</title>
+    <style>
+        img{
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Etiquetas Extras</h1>
+        <!-- <figure>
+            <img src="./spiderman1.png" alt="spiderman1">
+            <figcaption>Spiderman 1</figcaption>
+        </figure> -->
+
+        <picture>
+            <source srcset="spiderman3.png" media="(min-width:900px)">
+            <source srcset="spiderman2.png" media="(min-width:500px)">
+            <img src="spiderman1.png" alt="">
+        </picture>
+
+        <details>
+            <summary>Poderes de Spiderman</summary>
+            <ul>
+                <li>Primer poder</li>
+                <li>Segundo poder</li>
+                <li>Otros</li>
+            </ul>
+        </details>
+
+    </div>
+</body>
+</html>
